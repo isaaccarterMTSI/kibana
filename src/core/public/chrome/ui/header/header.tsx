@@ -111,7 +111,12 @@ export function Header({
       <HeaderTopBanner headerBanner$={observables.headerBanner$} />
       <header className={className} data-test-subj="headerGlobalNav">
         <div id="globalHeaderBars" className="header__bars">
-          <EuiHeader
+          <EuiHeader className="classificationTest header__firstBar">
+            {' '}
+            This page contains dynamic content -- Highest Possible Classification is TOP
+            SECRET//SI/TK//NOFORN
+          </EuiHeader>
+          {/* <EuiHeader
             theme="dark"
             position="fixed"
             className="header__firstBar"
@@ -155,9 +160,9 @@ export function Header({
                 borders: 'none',
               },
             ]}
-          />
+          /> */}
 
-          <EuiHeader position="fixed" className="header__secondBar">
+          <EuiHeader position="fixed" className="topOverride header__secondBar">
             <EuiHeaderSection grow={false}>
               <EuiHeaderSectionItem border="right" className="header__toggleNavButtonSection">
                 <EuiHeaderSectionItemButton

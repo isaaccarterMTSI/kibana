@@ -20,3 +20,18 @@
     top: $kbnHeaderBannerHeight + $euiHeaderHeightCompensation;
   }
 }
+
+.classificationTest {
+  padding-left: 30%;
+  background-color: yellow;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 3%;
+  padding-top: .25%;
+}
+
+.topOverride {
+  top: 29px !important;
+}
